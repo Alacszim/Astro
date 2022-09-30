@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+	--black: #181c1f;
+	--light: #242a2d;
+	--white: #ffffff;
+	--blurple: #5865F2;
+	--dblurple: #454FBF;
+}
+
+/** Main **/
+html {
+	background-color: var(--black);
+	text-align: center;
+	color: var(--white);
+	text-decoration: none;
+	font-family: 'Righteous', cursive;
+}
+
+hr {
+	width: 500px;
+	color: var(--dblurple)
+}
+
+.large {
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+.med {
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.small {
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+/** Nav Bar **/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--black);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+li {
+	float: left;
+	margin: 10px;
+	margin-top: 20px;
+}
+
+li a {
+	display: block;
+	color: var(--white);
+	text-align: center;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: 2px solid var(--white);
+	border-radius: 10px;
+	transition: all .5s ease;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+li a:hover:not(.active) {
+	background-color: var(--dblurple);
+	box-shadow: inset 0 0 0 4px var(--white);
+}
+
+#home {
+	border: 2px solid var(--blurple);
+	border-radius: 10px;
+}
+
+#title {
+	float: right;
+	margin-right: 50px;
+	letter-spacing: 4px;
+}
+
+/** Center **/
+#center {
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	margin-top: 80px;
+	width: 100%;
+	height: 620px;
+	background-image: url("image.png");
+	background-color: #cccccc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/** Bottom **/
+#bottom {
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	display: flex;
+	margin-top: 40px;
+}
+
+.section {
+	background-color: var(--light);
+	border-radius: 10px;
+	margin: 20px;
+	padding: 10px;
+	width: 20%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition: all .5s ease;
+}
+
+.section:hover {
+	width: 22%;
+	box-shadow: rgba(0, 0, 0, 10) 0px 5px 15px;
+}
+
+/** Final **/
+#final {
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	display: flex;
+	margin-top: 40px;
+	background-color: var(--light);
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
