@@ -139,3 +139,13 @@ li a:hover:not(.active) {
 	margin-bottom: 20px;
 	letter-spacing: 2px;
 }
+
+/** Footer **/
+#footer {
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	display: flex;
+	margin-top: 40px;
+	letter-spacing: 10px;
+}
