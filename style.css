@@ -139,6 +139,17 @@ li a:hover:not(.active) {
 	margin-left: 40px;
 	margin-bottom: 20px;
 	letter-spacing: 2px;
+	flex-direction: column;
+}
+
+#final a{
+	text-decoration: underlinew;
+	color: white;
+	transition: all .5s ease;
+}
+
+#final a:hover{
+	font-size: 22px;
 }
 
 /** Footer **/
