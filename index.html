@@ -4,70 +4,104 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Astro Bot</title>
+	<title>ASTRO</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/968635017796419584/983254217638682704/AstroLogo.png">
 </head>
 
 <body>
 	<div id="navbar">
 		<ul>
-			<h1 id="title">astro</h1>
-			<li><a id="home" href="#navbar">home</a></li>
-			<li><a href="#final">about</a></li>
+			<h1 id="title">astro bot</h1>
+			<li><a class="home" id="#" href="#navbar">home</a></li>
+			<li><a href="#about">about</a></li>
 			<li><a href="#links">links</a></li>
+            <li class="small" id="date">
+                <py-script>
+                    import datetime as dt
+                    print(f"{dt.date.today().strftime('%A %B %d, %Y')}")
+                </py-script>
+            </li>
 		</ul>
 	</div>
 
 	<div id="center">
-		<br> <br> <br> <br> <br> <br> <br> <br> <br>
-		<h1  class="large">Astro Bot</h1>
-		<hr>
+        <h1 class="title">
+            ↓ astro bot ↓
+        </h1>
 	</div>
 
-	<div id="bottom">
-		<div class="section">
-			<h1 class="med">Moderation</h1>
-			<h3 class="small">Using slash commands Astro offers several moderation-based commands like: timeouts, warns, bans, lock, and more!</h3>
-		</div>
-
-		<div class="section">
-			<h1 class="med">Economy</h1>
-			<h3 class="small">Astro has an entire economy system with leaderboards! Beg for money, gamble, buy exquisite items!</h3>
-		</div>
-
-		<div class="section">
-			<h1 class="med">Games</h1>
-			<h3 class="small">Asto offers several game commands for your server to have fun! Risk, Memes, Gayrate, and more!</h3>
-		</div>
+	<div id="extra">
+		<h1 class="title">
+			40,000+ USERS<br>
+			24/7 UPTIME<br>
+			MUSIC SOON
+		</h1>
 	</div>
 
-	<div id="final">
-		<h3 class="small">
-			Astro offers several commands to help you and your server. Using slash commands and several practical commands you can create the best out of your server. Containing moderation, economy, games, logging, and more.
-		</h3>
-	
-		<h3 class="small">
-			<a href="https://discord.gg/MJEJUn6ZPn">Support Server</a><br>
-			<a href="https://discord.com/api/oauth2/authorize?client_id=982845452565229578&permissions=2199023124471&scope=applications.commands%20bot">Bot Invite</a>
-		</h3>
-	</div>
-
-	<hr style="width: 80%; margin-top: 70px;">
-
-	<div id="footer">
+	<div id="about">
 		<div class="section">
+			<h1 class="med">
+				Moderation
+			</h1>
 			<h3 class="small">
-				Astro Bot
+				Using slash commands Astro offers several moderation-based commands like: timeouts, warns, bans, lock, and more!
 			</h3>
-			<hr style="width: 20px;">
-			<h3 class="small" id="links">
-				@Alacszim - Twitter
-				Alacszim#5862 - Discord
+			<image src="https://cdn.discordapp.com/attachments/925613670573170718/1027773042824323153/unknown.png" alt="Image" style="width: 100%; height: 100%; border-radius: 10px;">
+		</div>
+
+		<div class="section">
+			<h1 class="med">
+				Economy
+			</h1>
+			<h3 class="small">
+				Astro has an entire economy system with leaderboards! Beg for money, gamble, buy exquisite items!
+			</h3>
+			<image src="https://cdn.discordapp.com/attachments/925613670573170718/1027773043252146316/unknown.png" alt="Image" style="width: 100%; height: 100%; border-radius: 10px;"></image>
+		</div>
+
+		<div class="section">
+			<h1 class="med">
+				Games
+			</h1>
+			<h3 class="small">
+				Asto offers several game commands for your server to have fun! Risk, Memes, Gayrate, and more!
+			</h3>
+			<image src="https://cdn.discordapp.com/attachments/925613670573170718/1027773043625435146/unknown.png" alt="Image" style="width: 100%; height: 100%; border-radius: 10px;"></image>
+		</div>
+	</div>
+	
+	<div id="links">
+		<div id="content">
+			<h1 class="title">
+				Links
+			</h1>
+			
+			<h3 class="med">
+				Join The Support Server
+				<a href="https://discord.gg/MJEJUn6ZPn"><button>Join</button></a><br>
+				Invite Astro
+				<a href="https://discord.com/oauth2/authorize?client_id=982845452565229578&permissions=2199023124471&scope=applications.commands%20bot"><button>Join</button></a>
 			</h3>
 		</div>
 	</div>
 
-	<script src="script.js"></script>
+	<footer>
+		<h4 class="small">
+			Shade Development
+		</h4>
+
+		<h4 class="small">
+			Astro Bot
+		</h4>
+
+		<h4 class="small" id="tag">
+			Alacszim#5862
+		</h4>
+	</footer>
+
+	<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </body>
 
 </html>
