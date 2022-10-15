@@ -79,6 +79,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+	z-index: 5;
 }
 
 ul {
@@ -215,10 +216,11 @@ footer {
 /** Scroll Anim **/
 .hidden {
 	opacity: 0;
-	transition: all 1s;
+	transition: all 3s;
+	filter: blur(5px);
 }
 
 .show {
 	opacity: 1;
-	filter: blur(0);
+	filter: blur(0px);
 }
